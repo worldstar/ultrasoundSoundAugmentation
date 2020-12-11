@@ -1,14 +1,8 @@
 import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-import matplotlib.pyplot as plt
-import requests
 import random
 import cv2,os
 from core.Model.LeNet import buildLeNetModel
-import glob
-from PIL import Image
 
 class CustomDataGenerator(ImageDataGenerator):
   def __init__(self,
