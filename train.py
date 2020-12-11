@@ -7,7 +7,6 @@ import requests
 import random
 import cv2,os
 from core.Model.LeNet import buildLeNetModel
-from core.main2 import readImage
 import glob
 from PIL import Image
 
