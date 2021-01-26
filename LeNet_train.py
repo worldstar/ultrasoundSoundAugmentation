@@ -13,12 +13,12 @@ if __name__ == "__main__":
     datagen=CustomDataGenerator(fun="CLAHE_Color",clahenum=40,dtype=int)
 
     train_generator = datagen.flow_from_directory(
-        './DCdata/train',
+        './idenprof/train',
         target_size=(150, 150),
         batch_size=32,
         class_mode='categorical')
     val_generator = datagen.flow_from_directory(
-            './DCdata/val',
+            './idenprof/test',
             target_size=(150, 150),
             batch_size=32,
             class_mode='categorical')
