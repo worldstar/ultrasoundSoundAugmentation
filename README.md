@@ -188,8 +188,9 @@ datagen=CustomDataGenerator(fun="kmeans",num_clusters=4,dtype=int)
 
 <h2>小波轉換</h2>
 
--注意!
-<p style="color:red">該方法因為輸出為單通道，因此無法在本專案做使用。
+- 注意!!!!
+
+    <p style="color:red">該方法因為輸出為單通道，因此無法在本專案做使用。
 在下方附上範例程式</p>
 
 >>輸入範例：
