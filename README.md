@@ -188,7 +188,7 @@ datagen=CustomDataGenerator(fun="kmeans",num_clusters=4,dtype=int)
 
 <h2>小波轉換</h2>
 
-
+-注意!
 <p style="color:red">該方法因為輸出為單通道，因此無法在本專案做使用。
 在下方附上範例程式</p>
 
@@ -211,4 +211,5 @@ img2 = np.concatenate([AH, VD], axis=0)
 cv2.imwrite("dwt.png",img2)
 ```
 *下圖為小波轉換後的結果
+
 ![](https://i.imgur.com/Qcz8sYl.png)
