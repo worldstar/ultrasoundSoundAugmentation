@@ -6,7 +6,7 @@
 <h2>1.CLAHEColor</h2>
 
 - 參數說明
-- 
+
 CLAHE_Color：增強方法
 clahenum：設定每次處理的大小(值越大圖片顆粒感越重)
 
