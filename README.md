@@ -4,7 +4,9 @@
 本文方法有CLAHEColor、NLM、Opening_operation、OTSU、Normalize、HSV、CLAHE+Normalize、HSV+CLAHE、NLM+Opening，主要針對圖像去噪及輪廓增強，程式呼叫方法如下所示。
 
 <h2>1.CLAHEColor</h2>
-
+:::info/success/danger/warning
+需特別注意的資訊
+:::
 :::info
 - 參數說明
 CLAHE_Color：增強方法
