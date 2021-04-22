@@ -24,10 +24,14 @@
 
 
 - 參數說明
-NLM：增強方法
-h：決定濾波器強度。較高的值可以更好的消除噪聲，但也會刪除圖像細節
-templateWindowSize：奇數(推薦值為7)
-searchWindowSize：奇數(推薦值為21)
+
+    NLM：增強方法
+
+    h：決定濾波器強度。較高的值可以更好的消除噪聲，但也會刪除圖像細節
+
+    templateWindowSize：奇數(推薦值為7)
+
+    searchWindowSize：奇數(推薦值為21)
 
 >>輸入範例：
 
@@ -39,11 +43,13 @@ datagen=CustomDataGenerator(fun="NLMOpening",h=10,templateWindowSize=7,searchWin
 
 <h2>3.Opening_operation</h2>
 
-:::info
+
 - 參數說明
-Opening_operation：增強方法
-kernel：設定內核的大小
-::: 
+
+    Opening_operation：增強方法
+
+    kernel：設定內核的大小
+
 >>輸入範例：
 
 ```python=
@@ -54,10 +60,11 @@ datagen=CustomDataGenerator(fun="Opening_operation",kernel=5,dtype=int)
 
 <h2>4.OTSU</h2>
 
-:::info
+
 - 參數說明
-OTSU：增強方法
-::: 
+
+    OTSU：增強方法
+
 >>輸入範例：
 
 ```python=
@@ -70,10 +77,11 @@ datagen=CustomDataGenerator(fun="OTSU",dtype=int)
 
 <h2>5.Normalize</h2>
 
-:::info
+
 - 參數說明
-normalize：增強方法
-::: 
+
+    normalize：增強方法
+
 >>輸入範例：
 
 ```python=
@@ -84,10 +92,11 @@ datagen=CustomDataGenerator(fun="normalize",dtype=int)
 
 <h2>6.HSV</h2>
 
-:::info
+
 - 參數說明
-HSVcolor：增強方法
-::: 
+
+    HSVcolor：增強方法
+
 >>輸入範例：
 
 ```python=
@@ -98,11 +107,13 @@ datagen=CustomDataGenerator(fun="HSVcolor",dtype=int)
 
 <h2>7.CLAHE+Normalize</h2>
 
-:::info
+
 - 參數說明
-CLAHENormalize：增強方法
-clahenum：設定每次處理的大小
-::: 
+
+    CLAHENormalize：增強方法
+    
+    clahenum：設定每次處理的大小
+
 >>輸入範例：
 
 ```python=
@@ -113,11 +124,13 @@ datagen=CustomDataGenerator(fun="CLAHENormalize",clahenum=40,dtype=int)
 
 <h2>8.HSV+CLAHE</h2>
 
-:::info
+
 - 參數說明
-CLAHEHSVcolor：增強方法
-clahenum：設定每次處理的大小
-::: 
+
+    CLAHEHSVcolor：增強方法
+
+    clahenum：設定每次處理的大小
+
 >>輸入範例：
 
 ```python=
@@ -128,14 +141,19 @@ datagen=CustomDataGenerator(fun="CLAHEHSVcolor",clahenum=40,dtype=int)
 
 <h2>9.NLM+Opening</h2>
 
-:::info
+
 - 參數說明
-NLMOpening：增強方法
-h：決定濾波器強度。較高的值可以更好的消除噪聲，但也會刪除圖像細節
-templateWindowSize：奇數(推薦值為7)
-searchWindowSize：奇數(推薦值為21)
-kernel：設定內核的大小
-::: 
+
+    NLMOpening：增強方法
+
+    h：決定濾波器強度。較高的值可以更好的消除噪聲，但也會刪除圖像細節
+
+    templateWindowSize：奇數(推薦值為7)
+
+    searchWindowSize：奇數(推薦值為21)
+
+    kernel：設定內核的大小
+
 >>輸入範例：
 
 ```python=
@@ -151,11 +169,13 @@ datagen=CustomDataGenerator(fun="NLMOpening",h=10,templateWindowSize=7,searchWin
 
 <h2>k-means</h2>
 
-:::info
+
 - 參數說明
-kmeans：增強方法
-num_clusters：獲得每個像素所屬的類別
-::: 
+
+    kmeans：增強方法
+    
+    num_clusters：獲得每個像素所屬的類別
+
 >>輸入範例：
 
 ```python=
@@ -168,10 +188,10 @@ datagen=CustomDataGenerator(fun="kmeans",num_clusters=4,dtype=int)
 
 <h2>小波轉換</h2>
 
-:::danger
-該方法因為輸出為單通道，因此無法在本專案做使用。
-在下方附上範例程式
-::: 
+
+<p color="red">該方法因為輸出為單通道，因此無法在本專案做使用。
+在下方附上範例程式</p>
+
 >>輸入範例：
 
 ```python=
